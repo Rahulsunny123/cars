@@ -411,4 +411,6 @@ video {
     .right{
         right: -2vw;
     }
+    .circle{
+        display:none;
 }
