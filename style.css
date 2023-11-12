@@ -210,7 +210,7 @@ video {
 .right {
     height: 100%;
     width: 15%;
-    left: 135vh;
+    right: 0vh;
     float: right;
     z-index: 99;
     position: absolute;
