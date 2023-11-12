@@ -196,6 +196,7 @@ function boxcrsr() {
   var container = document.querySelector(".container");
   container.addEventListener("mouseenter", () => {
     var circle = document.createElement("div");
+    circle.classList.add("circle");
     circle.style.borderRadius = "50%";
     circle.style.height = "9vh";
     circle.style.width = "9vh";
