@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: #fff;
+    box-sizing: border-box;
 }
 
 html,
@@ -174,6 +175,17 @@ video {
     justify-content: center;
 }
 
+.right {
+    height: 100%;
+    width: 15%;
+    right: 2vh;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .left button {
     height: 10vh;
     width: 5vw;
@@ -207,17 +219,6 @@ video {
 }
 
 
-.right {
-    height: 100%;
-    width: 15%;
-    right: -2vh;
-    float: right;
-    z-index: 99;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .shower {
     height: 90%;
@@ -237,54 +238,176 @@ video {
     left: 12vw;
     white-space: nowrap;
 }
-.display img{
+
+.display img {
     height: 100%;
     width: 100%;
 }
-.display img:nth-child(2){
+
+.display img:nth-child(2) {
     transform: scale(0);
     position: absolute;
 }
-.display img:nth-child(3){
+
+.display img:nth-child(3) {
     transform: scale(0);
     position: absolute;
 }
-.display img:nth-child(4){
+
+.display img:nth-child(4) {
     transform: scale(0);
     position: absolute;
 }
-.display img:nth-child(5){
+
+.display img:nth-child(5) {
     transform: scale(0);
     position: absolute;
 }
 
 /* page-3 */
 
-.display #img2{
+.display #img2 {
     right: 0vw;
 }
-.display #img3{
+
+.display #img3 {
     right: 0vw;
 }
-.display #img4{
+
+.display #img4 {
     right: 0vw;
 }
-.display #img5{
+
+.display #img5 {
     right: 0vw;
 }
 
 
 /* hover animations */
 
-.ri-arrow-left-s-line:hover{
+.ri-arrow-left-s-line:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: all ease-in-out 0.5s;
     opacity: 50%;
 }
-.ri-arrow-right-s-line:hover{
+
+.ri-arrow-right-s-line:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: all ease-in-out 0.5s;
     opacity: 50%;
+}
+
+.nav2 i {
+    display: none;
+}
+
+@media (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav {
+        height: 10vh;
+    }
+
+    .nav1 {
+        height: 9vh;
+    }
+
+    .nav1 h1 {
+        font-size: 5vw;
+        margin-top: 3vh;
+    }
+
+    .nav2 h3 a {
+        font-size: 4vw;
+        display: none;
+
+    }
+
+    .nav2 i {
+        display: inline-block;
+        font-size: 6vw;
+    }
+
+    .page1 {
+
+        position: relative;
+        min-height: 50vh;
+    }
+
+    .page1 video {
+        height: 26vh;
+        position: absolute;
+        bottom: 9vh;
+    }
+    
+
+    .brandids img:nth-child(1){
+        width: 18vw;
+        margin-bottom: 104vh;
+    }
+    .brandids img:nth-child(2){
+        width: 18vw;
+        margin-bottom: 104vh;
+
+    }
+    .brandids img:nth-child(3){
+        width: 18vw;
+        height: 9vh;
+        margin-bottom: 104vh;
+    }
+    .brandids img:nth-child(4){
+        width: 20vw;
+        margin-bottom: 104vh;
+    }
+
+
+    /* page 2 */
+
+    .page2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 50vh;
+    }
+
+    .page2 .container .boxes{
+        height: 45vh;
+    }
+    .page2 .container{
+        height: 45vh;
+    }
+    #buggati{
+        height: 45vh;
+    }
+    #gtr{
+        height: 45vh;
+    }
+    #lambo{
+        height: 45vh;
+    }
+    #supra{
+        height: 45vh;
+    }
+    #rr{
+        height: 45vh;
+    }
+
+    /* page 3 */
+    .page3{
+        min-height: 50vh;
+    }
+
+    .screen{
+        height: 45vh;
+    }
+    .display{
+        height:45vh;
+    }
+    .right{
+        right: -2vw;
+    }
 }
