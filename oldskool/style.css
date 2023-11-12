@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    /* overflow-x: hidden; */
+}
+
+.nav {
+    background-color: transparent;
+    width: 100%;
+    height: 15vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.nav1 {
+    padding: 0vw 4vw;
+}
+
+.nav2 {
+    display: flex;
+    gap: 6vw;
+    padding: 0vw 4vw;
+}
+
+.nav2 h3 a {
+    text-decoration-line: none;
+}
+
+.nav2 h3 a:hover {
+    opacity: 60%;
+    border-bottom: 1px solid white;
+}
+
+video {
+    margin: 10vh 6vw;
+    position: fixed;
+    bottom: 53vh;
+    height: 135%;
+    width: 100%;
+    left: -6vw;
+    overflow: hidden;
+}
+
+.brandids {
+    position: absolute;
+    height: 26vh;
+    width: 100%;
+    background-color: transparent;
+    top: 74vh;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.brandids img:nth-child(3) {
+    height: 15vh;
+}
+
+.brandids img:nth-child(4) {
+    height: 8vh;
+}
+
+.brandids img:nth-child(5) {
+    height: 12vh;
+}
+
+/* page 2 */
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    height: 85vh;
+    width: 85vw;
+    background-color: rgb(0, 0, 0);
+}
+
+#buggati {
+    height: 85vh;
+    width: 17vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+#gtr {
+    height: 85vh;
+    width: 17vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+#lambo {
+    height: 85vh;
+    width: 17vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+#supra {
+    width: inherit;
+    height: 85vh;
+    position: absolute;
+    cursor: pointer;
+}
+
+#rr {
+    width: inherit;
+    height: 85vh;
+    position: absolute;
+    cursor: pointer;
+}
+
+#cgt {
+    width: inherit;
+    height: 85vh;
+    position: absolute;
+    cursor: pointer;
+}
+
+.boxes {
+    height: 100%;
+    width: 17vw;
+}
+
+/* page 3 */
+
+.page3 {
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.screen {
+    background-color: rgb(0, 0, 0);
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    top: 10vh;
+}
+
+.left {
+    height: 100%;
+    width: 15%;
+    left: -2vh;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left button {
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4vh;
+    background-color: transparent;
+}
+
+.right button {
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4vh;
+    background-color: transparent;
+}
+
+.ri-arrow-left-s-line {
+    color: rgb(255, 255, 255);
+    font-size: 10vh;
+}
+
+.ri-arrow-right-s-line {
+    color: rgb(255, 255, 255);
+    font-size: 10vh;
+}
+
+
+.right {
+    height: 100%;
+    width: 15%;
+    left: 135vh;
+    float: right;
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shower {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    top: 3vh;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display {
+    height: 72vh;
+    width: 65vw;
+    position: relative;
+    left: 12vw;
+    white-space: nowrap;
+}
+.display img{
+    height: 100%;
+    width: 100%;
+}
+.display img:nth-child(2){
+    transform: scale(0);
+    position: absolute;
+}
+.display img:nth-child(3){
+    transform: scale(0);
+    position: absolute;
+}
+.display img:nth-child(4){
+    transform: scale(0);
+    position: absolute;
+}
+.display img:nth-child(5){
+    transform: scale(0);
+    position: absolute;
+}
+
+/* page-3 */
+
+.display #img2{
+    right: 0vw;
+}
+.display #img3{
+    right: 0vw;
+}
+.display #img4{
+    right: 0vw;
+}
+.display #img5{
+    right: 0vw;
+}
+
+
+/* hover animations */
+
+.ri-arrow-left-s-line:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all ease-in-out 0.5s;
+    opacity: 50%;
+}
+.ri-arrow-right-s-line:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all ease-in-out 0.5s;
+    opacity: 50%;
+}
