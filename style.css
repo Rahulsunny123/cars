@@ -342,6 +342,7 @@ video {
         height: 26vh;
         position: absolute;
         bottom: 9vh;
+        width: 100%;
     }
     
 
